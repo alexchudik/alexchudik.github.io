@@ -1,0 +1,424 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0;
+  background-color: #346ea9;
+  height: 1px;
+  border-radius: 5px; /* Space out the Bootstrap <hr> more */
+  border: none;
+  box-shadow: 0px 1px 0px #ffffff;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.img-center {margin:0 auto;}
+.btn-header{
+  display: block;
+  width:80%;
+  background-color: #346ea9;
+  border:none;
+  color: white;
+  margin: 0 auto;
+  padding:20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.btn-header:hover{
+  color: white;
+  cursor: default;
+}
+.btn-doc{
+  display: block;
+  width:80%;
+  background-color: #346ea9;
+  border:none;
+  color: white;
+  margin: 0 auto;
+  padding:20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.panel{
+  background-color: #eee;
+}
+.border-btn{
+  border-top:1px #333;
+  border-bottom:1px #333;
+  border-radius: 0px;
+}
+li.divider{
+  height:2px;
+  background-color: #333;
+}
+img.content{
+  vertical-align: top;
+}
+.verticalline_r{
+  border-right: thin solid #5a5a5a;
+}
+.vertline_r_gr{
+  border-right: thin solid #169e26;
+  padding-right:10px; 
+}
+.no-top-bot-pad{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+img.social{
+  height:40px;
+  padding-right: 5px;
+}
+.workl{
+text-align: center;
+margin-top:30px;
+border-radius: 35px;
+border-color: #169e26;
+}
+@media (max-width: 700px) {
+  .workl {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+.workc{
+  border-right: thin solid #169e26;
+  padding-right:2px;
+  min-height: 440px;
+  text-align: right;
+}
+.workr{
+  padding:30px;
+  padding-top:0px;
+
+}
+.notopmargin{
+  margin-top: 0px;
+}
+h1.headers{
+  font-weight: 700;
+}
+.bbc{
+  background-image: url(../images/bbc.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height:230px;
+  width: 230px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bbc:hover{
+  background-size: 220px;
+}
+.inspire{
+  background-image: url(../images/inspire.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height:230px;
+  width: 230px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.inspire:hover{
+  background-size: 220px;
+}
+.ccig{
+  background-image: url(../images/ccig.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height:230px;
+  width: 230px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ccig:hover{
+  background-size: 220px;
+}
+.metro{
+  background-image: url(../images/metro.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height:230px;
+  width: 230px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.metro:hover{
+  background-size: 220px;
+}
+img.doings{
+  width:80%;
+  border-radius: 20px;
+}
+footer{
+  color: #aaa !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url(../images/wood.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 700px) {
+  footer {
+    background-image: url(../images/wood_sm.png);
+  }
+  .footer-space{
+    margin-top: 35px;
+  }
+}
+@media (min-width: 700px){
+  .footer-space{
+    margin-top: 100px;
+  }
+}
+.big{
+  font-size: 50px;
+  color: #346ea9;
+}
+.quotes{
+  font-size: 50px;
+}
+.source{
+  font-size: 35px;
+  color: #999999;
+  font-style: italic;
+}
+a.text-link{
+  color: #aaa;
+}
+.email-btn:hover{
+  transition: background-color 0.5s;
+  background-color: #346ea9;
+  color: white;
+}
+.email-btn{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: transparent;
+}
+.post-link:hover{
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.post-date{
+  font-size: 14px;
+}
+.post-content{
+  margin-bottom: 100px;
+  font-size: 24px;
+}
+.post-heading-img{
+  margin-bottom: 50px;
+  max-width:100%;
+}
+.back-blog-btn{
+  width: 100px;
+  background: transparent;
+}
+.back-blog-btn:hover{
+  width: 100px;
+  transition: background-color 0.5s;
+  background-color: #346ea9;
+  color: white;
+}
+.email-input{
+  background: transparent;
+} 
+input[type=email]:focus, textarea:focus {
+  transition:background-color 0.4s;
+  background-color: #346ea9;
+  color: white;
+}
+.post-content p{
+  margin-bottom: 25px;
+}
+.post-content h1{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.post-content h2{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.post-content h3{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.post-content h4{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.photo-blog{
+  max-width: 100%;
+}
+.photo-blog-v{
+  max-width: 60%;
+}
+.photo-spot{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.photo-caption{
+  font-style: italic;
+}
