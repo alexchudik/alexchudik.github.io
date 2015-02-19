@@ -30,9 +30,11 @@ body {
   padding-left: 15px;
 }
 .my-menu{
-  margin-right: 30px;
+  margin-right: 20%;
 }
-
+.my-logo {
+  margin-left: 20%;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
