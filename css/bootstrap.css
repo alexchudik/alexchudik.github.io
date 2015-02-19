@@ -4158,7 +4158,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
+
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
@@ -4239,7 +4239,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    
     margin: 0;
   }
   .navbar-nav > li {
@@ -4856,7 +4856,7 @@ a.badge:focus {
   border-top-color: #d5d5d5;
 }
 .container .jumbotron,
-.container-fluid .jumbotron {
+.container-flumbotron {
   border-radius: 6px;
 }
 .jumbotron .container {
