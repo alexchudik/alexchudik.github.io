@@ -35,8 +35,9 @@ body {
 .my-logo {
   margin-left: 20%;
 }
-my.nav {
+.my-nav {
   padding: 50px 50px;
+  text-align: center;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
